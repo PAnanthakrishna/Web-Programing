@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>REGISTRATION FORM</title>
+<h1><center><font face="Italic" color="PURPLE" size="4"><b>REGISTRATION FORM</b></font></center>
+</h1></head>
+<body style="background-color:lightgreen;">
+<form name="form" action="" method="POST" onsubmit="return validateForm()">
+NAME:<input type="text" name="fname"><br><br>
+AGE:<select><br><br>
+     <option>20</option>
+     <option>21</option>
+     <option>22</option>
+     <option>23</option>
+     <option>24</option>
+     <option>25</option>
+     <option>26</option> 
+     </select><br>
+PASSWORD:<input type="password"><br><br>
+HOBBIES:<br><input type="radio" name="text" value="">Drawing<br><br>
+        <input type="radio" name="text" value="">Singing<br><br>
+         <input type="radio" name="text" value="">Dancing<br><br>
+          <input type="radio" name="text" value="">Reading books<br><br>
+Email Id:<input type="email"><br><br>
+LANGUAGE:<input type="checkbox">MALAYALAM<br><br>
+<input type="checkbox">ENGLISH<br><br>
+<input type="checkbox">HINDI<br><br>
+<input type="checkbox">MALAYALAM<br><br>
+UPLOAD CV<input type="file"><br><br>
+<td style="text-align: center;"><input type="reset" style="background-color:
+red;color:white; padding: 6px 12px; border: 1px solid transparent;"></td>
+<td colspan="2" style="text-align: center;"><input type="submit">
+</form>
+<script>
+function validateForm() {
+var fname = document.form.fname.value;
+if (fname == "") {
+		alert("Enter First Name !!");
+		document.form.fname.focus();
+		return false;
+		}
+		else if(ren.test(fname)){
+		alert("Enter Valid Name !!");
+		document.form.fname.focus();
+		return false;
+		
+</script>
+</body>    
+</html>
